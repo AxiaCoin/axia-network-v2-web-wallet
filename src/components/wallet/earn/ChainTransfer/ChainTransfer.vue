@@ -49,7 +49,7 @@
                             <v-btn
                                 v-if="!isConfirm"
                                 data-cy="confirm"
-                                class="button_primary"
+                                class="confirm-btn"
                                 @click="confirm"
                                 :disabled="!canSubmit"
                                 block
@@ -607,6 +607,11 @@ export default class ChainTransfer extends Vue {
     }
 }
 
+.confirm-btn {
+    background: #178fe1 !important;
+    border-radius: 12px !important;
+    color: white !important;
+}
 .details {
     background: #f4f5f6;
     border-radius: 12px;
